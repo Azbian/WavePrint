@@ -32,6 +32,13 @@ The core functionality of this system relies on three principal components:
 | `DATABASE/` | Folder containing the generated fingerprint files (the database). |
 | `song_snippet/` | Folder containing short audio clips used for testing the recognition capability. |
 
+### Custom Functions
+| Function Name | Purpose |
+| :--- | :---|
+| `cfar()` | This function is used to dynamically filter the noise in the spectrogram and identify the most robust peak locations, ensuring that false detections are minimized across different audio volumes.|
+| `detect_peaks()` | Scans the processed spectrogram data (often after filtering or applying cfar) to precisely locate and map the maximum energy points (peaks) in terms of time and frequency.|
+| `prep_audio()` | Handles all necessary preprocessing steps for the audio input.|
+
 
 
 ### Prerequisites
