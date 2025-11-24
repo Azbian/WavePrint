@@ -5,7 +5,8 @@ from feature_extract.read_utils import prep_audio
 import matplotlib.pyplot as plt
 import scipy.signal as sig
 
-song_cfar_marker = read_csv("DATABASE/ONE_OK_ROCK_SAVE_YOURSELF_OFFICIAL_VIDEO_Fueled_By_Ramen.csv", header=None).values
+
+song_cfar_marker = read_csv("DATABASE/oh_lord.csv", header=None).values
 
 # snippet start time 38 sec end time 52 sec
 snippet_path = "song_snippet/snippet2.wav"
@@ -62,6 +63,5 @@ print(f"Highest correlation peak found:{correlation_peak}")
 #print(f"  Frequency Bin Offset: {freq_offset_bins} bins")
 #print(f"  Time Frame Offset:    {time_offset_frames} frames")
 print(f"  ==> Snippet starts at: {time_offset_seconds:.2f} seconds into the song.")
-# --- End of modified print ---
 
 plt.show()
