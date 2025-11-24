@@ -16,8 +16,8 @@ This project is intended for educational purposes, demonstrating the core concep
 The core functionality of this system relies on three principal components:
 
 1.  **Audio Fingerprinting:** Extracting robust, repeatable features from audio data that remain consistent even when the audio is noisy or truncated.
-2.  **Hashing/Indexing:** Storing these features in a structured format (likely a local database or key-value store) for fast retrieval.
-3.  **Correlation Analysis:** Comparing the features of an unknown snippet against the database fingerprints to determine the highest match.
+2.  **Correlation Analysis:** Comparing the features of an unknown snippet against the database fingerprints to determine the highest match.
+
 
 ### Key Files
 
@@ -32,19 +32,20 @@ The core functionality of this system relies on three principal components:
 | `DATABASE/` | Folder containing the generated fingerprint files (the database). |
 | `song_snippet/` | Folder containing short audio clips used for testing the recognition capability. |
 
-## Installation and Setup
-`pip install numpy scipy librosa matplotlib`
+
 
 ### Prerequisites
 
-You will require **Python 3.x** and the necessary libraries, which typically include:
+You will require **Python** and the necessary libraries, which typically include:
 
   * `numpy`
   * `scipy`
-  * `librosa` (highly recommended for audio feature extraction)
-  * `matplotlib` (for plotting and visualization)
+  * `librosa` 
+  * `matplotlib`
 
 To install these dependencies, execute the following command:
+## Installation and Setup
+`pip install numpy scipy librosa matplotlib`
 *(Note: Additional dependencies may be required depending on the specific Python packages utilized.)*
 
 ### Step 1: Prepare Your Dataset
