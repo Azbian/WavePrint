@@ -33,6 +33,7 @@ The core functionality of this system relies on three principal components:
 | `song_snippet/` | Folder containing short audio clips used for testing the recognition capability. |
 
 ## Installation and Setup
+'pip install numpy scipy librosa matplotlib'
 
 ### Prerequisites
 
@@ -55,8 +56,8 @@ To install these dependencies, execute the following command:
 
 Execute the database generation script to process your audio files:
 
-```bash
-python create_database.py
+
+'python create_database.py'
 
 This script analyzes all files in `Dataset/` and populates the `DATABASE/` folder with unique fingerprints.
 
@@ -64,8 +65,7 @@ This script analyzes all files in `Dataset/` and populates the `DATABASE/` folde
 
 Test the song recognition system using a prepared snippet:
 
-```bash
-python find_song_demo.py
+'python find_song_demo.py'
 
 The output will display the recognized song title and the correlation score, indicating the system's confidence in the match. 
 
@@ -83,5 +83,3 @@ Contributions are welcome. If you discover bugs, have suggestions for new featur
 
 This project is licensed under the MIT License. Please refer to the repository for the full details of the license.
 
-```bash
-pip install numpy scipy librosa matplotlib
